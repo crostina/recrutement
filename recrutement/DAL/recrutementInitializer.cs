@@ -11,21 +11,20 @@ namespace recrutement.DAL
     {
         protected override void Seed(recruteContext context)
         {
-            var students = new List<Candidat>
+            var candidats = new List<Candidat>
             {
-            new Candidat{FirstMidName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01")},
-            new Candidat{FirstMidName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01")},
-            new Candidat{FirstMidName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01")},
-            new Candidat{FirstMidName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01")},
-            new Candidat{FirstMidName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01")},
-            new Candidat{FirstMidName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2001-09-01")},
-            new Candidat{FirstMidName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01")},
-            new Candidat{FirstMidName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
+            new Candidat{FirstName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2001-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
+            new Candidat{FirstName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"}
             };
 
-            students.ForEach(s => context.Candidats.Add(s));
+            candidats.ForEach(s => context.Candidats.Add(s));
             context.SaveChanges();
-            var courses = new List<Skill>
+            var skills = new List<Skill>
             {
             new Skill{SkillID=1050,Title="Chemistry",Credits=3,},
             new Skill{SkillID=4022,Title="Microeconomics",Credits=3,},
@@ -35,7 +34,7 @@ namespace recrutement.DAL
             new Skill{SkillID=2021,Title="Composition",Credits=3,},
             new Skill{SkillID=2042,Title="Literature",Credits=4,}
             };
-            courses.ForEach(s => context.Skills.Add(s));
+            skills.ForEach(s => context.Skills.Add(s));
             context.SaveChanges();
             var enrollments = new List<Enrollment>
             {
