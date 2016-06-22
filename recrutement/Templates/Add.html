@@ -1,5 +1,12 @@
 ﻿<h2>{{form.title}}</h2>
-<form name="{{form.formname}}" novalidate class="form-horizontal">
+<form name="newCandidat" novalidate class="form-horizontal">
+    <form-field record="candidat" field="firstName" live="false" required="true"></form-field>
+    <form-field record="candidat" field="lastName" live="false" required="true"></form-field>
+
+    <form-field ng-repeat='(k,v) in candidat.values | keyFilter:"firstName" | keyFilter:"lastName"'
+                 record="candidat" field="{{k}}" live="false" ></form-field>
+    <new-field record="candidat" live="false"></new-field>
+
     <div class="row form-group">
         <div class="col-sm-offset-2">
             <button class="btn btn-primary" ng-click="save()">Create</button>

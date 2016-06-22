@@ -9,6 +9,7 @@ namespace recrutement.DAL
     {
         public recruteContext() : base("recruteContext")
         {
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<Candidat> Candidats { get; set; }
@@ -19,5 +20,6 @@ namespace recrutement.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
     }
 }

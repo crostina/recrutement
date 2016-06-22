@@ -1,17 +1,21 @@
-﻿'use strict';
-var app = angular.module('app', ['ngRoute','ngResource']);
+﻿//'use strict';
+var app = angular.module('app', ['ngRoute','ngResource','ngMessages']);
 
 app.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider
-        .when('/', {
-            controller: 'ListController',
-            templateUrl: '/Templates/Candidat.html'
+        .when('/candidats', {
+            controller: 'candidatController',
+            templateUrl: '/Templates/Table.html'
         })
-        .when('/Candidat/Add',{
-        controller:'AddController',
+        .when('/candidat/add',{
+        controller: 'addController',
         templateUrl: '/Templates/Add.html'
-        });
+        })
+        .when('/candidat/:id', {
+            controller: 'singleController',
+            templateUrl:'/Templates/single.html'
+        }).otherwise('/candidats');
 
     //$locationProvider.html5Mode({
     //    enabled: true,
@@ -19,7 +23,4 @@ app.config(['$routeProvider',
     //});
 }]);
 
-//myApp.run(function ($rootScope) {
-//    $rootScope.message = "hello angular!";
-//});
 

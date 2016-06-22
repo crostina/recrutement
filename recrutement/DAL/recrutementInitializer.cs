@@ -13,13 +13,13 @@ namespace recrutement.DAL
         {
             var candidats = new List<Candidat>
             {
-            new Candidat{FirstName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2001-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"},
-            new Candidat{FirstName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Adress="23rue52"}
+            new Candidat{FirstName="Carson",LastName="Alexander",EnrollmentDate=DateTime.Parse("2005-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Meredith",LastName="Alonso",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Arturo",LastName="Anand",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Gytis",LastName="Barzdukas",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Yan",LastName="Li",EnrollmentDate=DateTime.Parse("2002-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Peggy",LastName="Justice",EnrollmentDate=DateTime.Parse("2001-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"},
+            new Candidat{FirstName="Laura",LastName="Norman",EnrollmentDate=DateTime.Parse("2003-09-01").ToString(),Email="ssq@sss.com",HomePhone=25333555,MobilePhone=52333123,Birthday=DateTime.Parse("2005-09-01").ToString(),Website="www.ssss.com",Address="23rue52"}
             };
 
             candidats.ForEach(s => context.Candidats.Add(s));

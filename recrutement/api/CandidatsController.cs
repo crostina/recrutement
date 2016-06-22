@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using recrutement.DAL;
 using recrutement.Models;
+using recrutement.ViewModels;
 
 namespace recrutement.api
 {
@@ -79,6 +80,7 @@ namespace recrutement.api
             {
                 return BadRequest(ModelState);
             }
+            //Candidat candidat = new Candidat { FirstName = candi.FirstName[0], LastName = candi.LastName[0], EnrollmentDate = DateTime.Parse(candi.EnrollmentDate[0]).ToString(), Email = candi.Email[0], HomePhone = int.Parse(candi.HomePhone[0]), MobilePhone = int.Parse(candi.MobilePhone[0]), Birthday = DateTime.Parse(candi.Birthday[0]).ToString(), Website = candi.Website[0], Address = candi.Address[0] };
 
             db.Candidats.Add(candidat);
             db.SaveChanges();

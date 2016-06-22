@@ -14,7 +14,7 @@ namespace recrutement.Models
         public int MobilePhone { get; set; }
         public string Birthday { get; set; }
         public string Website { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
         public string EnrollmentDate { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
