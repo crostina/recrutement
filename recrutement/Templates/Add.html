@@ -1,5 +1,5 @@
 ﻿<h2>{{form.title}}</h2>
-<form name="newCandidat" novalidate class="form-horizontal">
+<form name="newCandidat" novalidate class="form-horizontal" >
     <form-field record="candidat" field="firstName" live="false" required="true"></form-field>
     <form-field record="candidat" field="lastName" live="false" required="true"></form-field>
 
@@ -9,9 +9,7 @@
 
     <div class="row form-group">
         <div class="col-sm-offset-2">
-            <button class="btn btn-primary" ng-click="save()">Create</button>
-             
+            <button class="btn btn-primary" ng-click="save()" ng-disabled="newCandidat.$invalid">Create</button>
         </div>
     </div>
-
 </form>

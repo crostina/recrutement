@@ -1,4 +1,6 @@
-﻿<div class="row form-group" ng-form="{{field}}" ng-class="{'has-error':{{field}}.$dirty &&{{field}}.$invalid}">
+﻿<div class="row form-group " ng-form="{{field}}" ng-class="{'has-error':{{field}}.$dirty &&{{field}}.$invalid,
+                                                            'has-success' : {{field}}.$dirty &&{{field}}.$valid && !({{field}}.$prestine) && record.values[field] !=='',
+                                                            }">
  
     <label class="col-sm-2 control-label">
         {{field | labelCase}}
@@ -15,11 +17,10 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 has-error" ng-show='{{field}}.$dirty &&{{field}}.$invalid' ng-messages="field.$error">
+    <div class="col-sm-4 has-error" ng-show='{{field}}.$dirty &&{{field}}.$invalid'  ng-messages="this[field].$error">
         <p class="control-label" ng-message="required">
             {{field | labelCase}} is required.
         </p>
         <p class="control-label" ng-repeat="(k,v) in types" ng-message="{{k}}">{{field | labelCase}} {{v[1]}}</p>
     </div>
-
 </div>
