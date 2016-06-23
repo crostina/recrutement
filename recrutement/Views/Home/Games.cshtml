@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Games";
+}
+<link href="~/Content/main.scss" rel="stylesheet" />
+
+<script src="~/Scripts/games/app.js"></script>
+<script src="~/Scripts/games/grid/grid.js"></script>
+<script src="~/Scripts/games/grid/grid_directive.js"></script>
+<script src="~/Scripts/games/grid/tile_directive.js"></script>
+<script src="~/Scripts/games/keyboard/keyboard.js"></script>
+<script src="~/Scripts/games/game/game.js"></script>
+<h2>Games</h2>
+<div ng-app="twentyfourtyeightApp">
+    <ul class="nav nav-pills">
+        <li role="list" ng-class="{active: PAGE === '2048'}"><a href="#/2048">All Candidats</a></li>
+        <li role="form" ng-class="{active: PAGE === 'add'}"><a href="#/candidat/add">New Candidat</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <div class="row" ng-cloak style="margin-top:50px">
+        <div class="col-sm-12" ng-view>
+
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 ﻿//'use strict';
-var app = angular.module('app', ['ngRoute','ngResource','ngMessages']);
+var app = angular.module('candidatApp', ['ngRoute','ngResource','ngMessages']);
 
 app.config(['$routeProvider',
     function ($routeProvider) {

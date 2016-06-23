@@ -1,7 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div>
+<script src="~/Scripts/app/candidatApp.js"></script>
+<script src="~/Scripts/app/candidatController.js"></script>
+<script src="~/Scripts/app/resources.js"></script>
+<script src="~/Scripts/app/filters.js"></script>
+<script src="~/Scripts/app/directives.js"></script>
+<div ng-app="candidatApp">
     <ul class="nav nav-pills">
         <li role="list" ng-class="{active: PAGE === 'all'}"><a href="#/candidats">All Candidats</a></li>
         <li role="form"ng-class="{active: PAGE === 'add'}"><a href="#/candidat/add">New Candidat</a></li>

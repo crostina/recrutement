@@ -1,4 +1,4 @@
-﻿angular.module('app')
+﻿angular.module('candidatApp')
 .value('FieldTypes', {
     text: ['Text', 'Should be text'],
     email: ['Email', 'Should be email address'],
@@ -15,7 +15,7 @@
 .directive('formField', function ($timeout,FieldTypes) {
     return {
         restrict: 'EA',
-        templateUrl: 'Templates/form-field.html',
+        templateUrl: '/Templates/form-field.html',
         replace: true,
         scope: {
             record: '=',
@@ -49,7 +49,7 @@
 .directive('newField', function ($filter, FieldTypes) {
     return {
         restrict: 'EA',
-        templateUrl: 'Templates/new-field.html',
+        templateUrl: '/Templates/new-field.html',
         replace: true,
         scope:  {
             record:'=',

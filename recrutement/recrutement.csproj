@@ -232,6 +232,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\Angularjs\angular-cookies.js" />
+    <Content Include="Scripts\Angularjs\angular-cookies.min.js" />
     <Content Include="Scripts\Angularjs\angular-messages.js" />
     <Content Include="Scripts\Angularjs\angular-messages.min.js" />
     <Content Include="Scripts\Angularjs\angular-animate.js" />
@@ -252,14 +254,26 @@
     <Content Include="Scripts\Angularjs\angular-animate.min.js.map" />
     <Content Include="Scripts\Angularjs\angular-resource.min.js.map" />
     <Content Include="Scripts\Angularjs\angular-messages.min.js.map" />
+    <Content Include="Content\main.scss" />
+    <Content Include="Content\_functions.scss" />
+    <Content Include="Scripts\Angularjs\angular-cookies.min.js.map" />
     <None Include="Scripts\Jquery\jquery-2.2.4.intellisense.js" />
-    <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\candidatApp.js" />
     <Content Include="Scripts\app\directives.js" />
     <Content Include="Scripts\app\resources.js" />
     <Content Include="Scripts\app\filters.js" />
     <Content Include="Scripts\app\candidatController.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\games\app.js" />
+    <Content Include="Scripts\games\gamesApp.js" />
+    <Content Include="Scripts\games\game\game.js" />
+    <Content Include="Templates\2048\grid.html" />
+    <Content Include="Scripts\games\grid\grid.js" />
+    <Content Include="Scripts\games\grid\grid_directive.js" />
+    <Content Include="Templates\2048\tile.html" />
+    <Content Include="Scripts\games\grid\tile_directive.js" />
+    <Content Include="Scripts\games\keyboard\keyboard.js" />
     <Content Include="Scripts\Jquery\jquery-2.2.4.js" />
     <Content Include="Scripts\Jquery\jquery-2.2.4.min.js" />
     <Content Include="Scripts\Jquery\jquery-2.2.4.min.map" />
@@ -274,6 +288,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Templates\2048.html" />
     <Content Include="Templates\new-field.html" />
     <Content Include="Templates\single.html" />
     <Content Include="Templates\Table.html" />
@@ -313,6 +328,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Games.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

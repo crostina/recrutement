@@ -1,4 +1,4 @@
-﻿angular.module('app')
+﻿angular.module('candidatApp')
     // uppercase first character
 .filter('labelCase', function () {
     return function (input) {

@@ -1,4 +1,4 @@
-﻿angular.module('app')
+﻿angular.module('candidatApp')
 .controller('candidatController', function ($scope, $rootScope, Candidat, $location) {
     $rootScope.PAGE = 'all';
     $scope.candidats = Candidat.query();

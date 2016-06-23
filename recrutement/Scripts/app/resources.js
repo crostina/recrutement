@@ -1,4 +1,4 @@
-﻿angular.module('app')
+﻿angular.module('candidatApp')
 .factory('Candidat', function ($resource) {
     return $resource('/api/Candidats/:id', { id: '@id' }, {
         'update': {method:'PUT'}

@@ -12,6 +12,12 @@ namespace recrutement.Controllers
         {
             return View();
         }
+        public ActionResult Games()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
 
         public ActionResult About()
         {
